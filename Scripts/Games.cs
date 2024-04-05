@@ -56,6 +56,7 @@ public class Games : MonoBehaviour
         this.manager_p.play(type);
         this.carrot.play_sound_click();
         this.gamepad.on_play();
+        this.carrot.ads.Destroy_Banner_Ad();
     }
 
     public void btn_user()
@@ -80,6 +81,7 @@ public class Games : MonoBehaviour
         this.manager_p.back_menu();
         this.ani.play_load();
         this.gamepad.on_home();
+        carrot.ads.create_banner_ads();
     }
 
     public void btn_share()
